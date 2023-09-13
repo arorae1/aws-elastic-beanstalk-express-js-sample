@@ -38,7 +38,7 @@ The following diagram provides a visual representation of the services used in t
 
 This architecture illustrates the flow of our Node.js web application from GitHub through AWS CodeBuild and finally to AWS Elastic Beanstalk for deployment. The automated pipeline ensures that changes to our code are seamlessly built and deployed to our Elastic Beanstalk environment.
 
-Now, let's get started with setting up our continuous delivery pipeline for Node.js web application on AWS Elastic Beanstalk. Follow the steps outlined in this repository to get your pipeline up and running. Happy coding and deploying!
+Now, let's get started with setting up our continuous delivery pipeline for Node.js web application on AWS Elastic Beanstalk. Follow the steps (https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/tree/main/Steps.md) outlined in this repository to get your pipeline up and running. Happy coding and deploying!
 
 
 
