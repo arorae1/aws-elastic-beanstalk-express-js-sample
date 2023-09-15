@@ -1,6 +1,6 @@
 Followed Steps:
 
-1 - Setup Git repository:
+**1 - Setup Git repository:**
 
 **Fork the Github repository**
 1. Logged into my Github account & navigated to the "aws-elastic-beanstalk-express-js-sample" repository.
@@ -22,7 +22,7 @@ Followed Steps:
   <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/8fc4c4b1-64c7-47cb-9678-6587f0b9dc3c" width="200">
 </1p>
 
-3.In your terminal or Git Bash, input the following command, ensure to substitute "YOUR-USERNAME" with your GitHub username. Upon executing this command, your terminal will display a message beginning with "Cloning into." This action will create a new directory containing a copy of the files from the GitHub repository.
+3. In your terminal or Git Bash, input the following command, ensure to substitute "YOUR-USERNAME" with your GitHub username. Upon executing this command, your terminal will display a message beginning with "Cloning into." This action will create a new directory containing a copy of the files from the GitHub repository.
 #git clone https://github.com/YOUR-USERNAME/aws-elastic-beanstalk-express-js-sample
 
 <p align="center">
@@ -32,21 +32,21 @@ Followed Steps:
 4. Within the newly created folder, there will be a file named "app.js." Open "app.js" using your preferred code editor. Modify the content on line 5 to something other than "Hello World!" and save the file.
 
 <p align="center">
-  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/bbad7cb1-926c-434c-992b-d21b23721b18" width="200">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/bbad7cb1-926c-434c-992b-d21b23721b18" width="400">
 </p>
 
 5. Navigate to the folder named "aws-elastic-beanstalk-express-js-sample/" and commit the changes using the following commands:
 #git add app.js
 #git commit -m "Change message"
 <p align="center">
-  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/37b7e4da-9826-431c-94e8-3f3962c107fc" width="200">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/37b7e4da-9826-431c-94e8-3f3962c107fc" width="400">
 </p>
 
 6. Push the local changes to the remote repository hosted on GitHub using this command.
 #git push
 
 <p align="center">
-  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/8e74f670-612b-4dce-a399-0ef4c26a7471" width="200">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/8e74f670-612b-4dce-a399-0ef4c26a7471" width="400">
 </p>
 
 #Verify the changes
@@ -57,7 +57,7 @@ Followed Steps:
   <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/91b1a732-1e95-4006-8c01-d5a821f0b4f5" width="200">
 </p>
 
-2 -  Deployed Web App on Elastic Beanstalk
+**2 -  Deployed Web App on Elastic Beanstalk**
 
 1. Open a new browser tab and access the AWS Elastic Beanstalk console. Click on the "Create Application" button.
 <p align="center">
@@ -96,6 +96,10 @@ The "Review" page will display a summary of your selections.
 
 10. Click "Submit" to initiate the creation of your new environment.
 
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/ea546570-44fd-404b-b49a-5a469ce32136" width="500">
+</p>
+
 While waiting for the deployment, you will observe:
 
 A screen displaying status messages for your environment.
@@ -106,26 +110,44 @@ Once you see the banner, you have successfully created an AWS Elastic Beanstalk 
 i. Select the link provided under the name of your environment.
 ii. After the test is completed, a new browser tab should open, congratulating you on your successful deployment!
 
-3 - Create Build Project
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/a5c06b96-d404-4850-b3d8-2343c5740fc7" width="500">
+</p>
+
+**3 - Create Build Project**
 
 1. Open a new browser tab and access the AWS CodeBuild console. Select "Create project" button.
 2. In the "Project name" field, input "Build-DevOpsGettingStarted." From the "Source provider" dropdown menu, select "GitHub."
 Ensure that the "Connect using OAuth" radio button is selected.
-3. Click the white "Connect to GitHub" button. A new browser tab will open, requesting AWS CodeBuild's access to your GitHub repository.Click the green "Authorize aws-codesuite" button. Enter your GitHub password. Click the orange "Confirm" button.
-4. Select the "Repository in my GitHub account" option.
-5. In the search field, enter "aws-elastic-beanstalk-express-js-sample."
-6. Confirm that "Managed Image" is selected.
-7. Choose "Amazon Linux 2" from the "Operating system" dropdown menu.
-8. From the "Runtime(s)" dropdown menu, select "Standard."
-9. Choose "aws/codebuild/amazonlinux2-x86_64-standard:3.0" from the "Image" dropdown menu.
-10. Verify that "Always use the latest image for this runtime version" is selected for "Image version". Confirm that "Linux" is selected for "Environment type."
-12. Make sure "New service role" is selected.
+
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/1fdc8054-04a1-48ee-ac06-300465b13242" width="500">
+</p>
+
+3. Click the white "Connect to GitHub" button. A new browser tab will open, requesting AWS CodeBuild's access to your GitHub repository.Click the green "Authorize aws-codesuite" button. Enter your GitHub password. Click the  "Confirm" button.
+
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/9d01540f-8b5e-4c74-b5f7-5fc258639f60" width="500">
+</p>
+   
+4. Select the "Repository in my GitHub account" option. In the search field, enter "aws-elastic-beanstalk-express-js-sample."
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/6e2f8b84-939c-4ea3-b841-8c0be877018e" width="500">
+</p>
+
+5. Confirm that "Managed Image" is selected. Choose "Amazon Linux 2" from the "Operating system" dropdown menu. From the "Runtime(s)" dropdown menu, select "Standard." Choose "aws/codebuild/amazonlinux2-x86_64-standard:3.0" from the "Image" dropdown menu.
+
+ Verify that "Always use the latest image for this runtime version" is selected for "Image version". Confirm that "Linux" is selected for "Environment type."
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/a97adbde-53f4-489e-be76-753b2bf1b182" width="500">
+</p>
+ 
+6. Make sure "New service role" is selected.
 
 Now, create a Buildspec file:
 
-13. Click "Insert build commands."
-14. Choose "Switch to editor."
-15. Replace the contents of the editor with the following code:
+7. Click "Insert build commands." Choose "Switch to editor."
+8. Replace the contents of the editor with the following code:
 
 ```yaml
 version: 0.2
@@ -137,15 +159,19 @@ artifacts:
   files:
     - '**/*'
 ```
-16. Click the  "Create build project" button. You should now see a dashboard for your project.
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/75deed2e-1bd8-460f-bef3-1948d92fcf8f" width="500">
+</p>
+
+9. Click the  "Create build project" button. You should now see a dashboard for your project.
 
 **Testing the CodeBuild project**
-1. Click the orange "Start build" button. This will take you to a page to configure the build process.
+1. Click the "Start build" button. This will take you to a page to configure the build process.
 2. Confirm that the loaded page references the correct GitHub repository.
 3. Click the "Start build" button.
 4. Wait for the build to complete. While waiting, you'll see a green bar at the top of the page with the message "Build started," the build progress under "Build log," and after a few minutes, a green checkmark with a "Succeeded" message confirming the successful build.
 
-4 - Create Continuous Delivery Pipeline
+**4 - Create Continuous Delivery Pipeline**
 
 **Create a New Pipeline:**
 1. Open a browser window and access the AWS CodePipeline console. Click the  "Create pipeline" button to start setting up the pipeline.
@@ -153,20 +179,35 @@ artifacts:
 3. Ensure that "New service role" is selected.
 4. Click the "Next" button to proceed.
 
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/6c170962-b6a2-4a0c-9cc8-619a91585cfa" width="500">
+</p>
+
 **Configure Source Stage:**
 1. Select "GitHub version 1" from the "Source provider" dropdown menu.
-2. Click the white "Connect to GitHub" button. A new browser tab will open, requesting AWS CodePipeline's access to your GitHub repository.
-3. Click the "Authorize aws-codesuite" button. You will see a green box with the message "You have successfully configured the action with the provider."
-4. From the "Repository" dropdown, choose the repository you created in Module 1.
-5. Select "main" from the branch dropdown menu.
-6. Confirm that "GitHub webhooks" is selected.
-7. Click the orange "Next" button to proceed.
+
+ <p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/75164b86-4a43-472d-b9b3-bdb2920ed6ba" width="500">
+</p>
+
+2. Click the white "Connect to GitHub" button. A new browser tab will open, requesting AWS CodePipeline's access to your GitHub repository. Click the "Authorize aws-codesuite" button. You will see Github Connected successfully."
+
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/3ade07d1-9318-4c6a-98e1-be25474ae07b" width="500">
+</p>
+
+3. From the "Repository" dropdown, choose the repository you created in Module 1. Select "main" from the branch dropdown menu. Confirm that "GitHub webhooks" is selected.
+4. Click the "Next" button to proceed.
 
 **Configure Build Stage:**
 1. From the "Build provider" dropdown menu, select "AWS CodeBuild."
-2. Under "Region," verify that the "US West (Oregon) Region" is selected.
+2. Under "Region," verify that the "U.S East (N. Virginia)" is selected.
 3. Select "Build-DevOpsGettingStarted" under "Project name."
-4. Click the orange "Next" button.
+4. Click the "Next" button.
+
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/345f09d2-90a9-4639-b9af-8af3155e5aae" width="500">
+</p>
 
 **Configure Deploy Stage:**
 1. Choose "AWS Elastic Beanstalk" from the "Deploy provider" dropdown menu.
@@ -174,27 +215,50 @@ artifacts:
 3. In the "Application name" field, select the app named "DevOpsGettingStarted" that you created in Module 2.
 4. Choose "DevOpsGettingStarted-env" from the "Environment name" textbox.
 5. Click the "Next" button. You will now be presented with a page where you can review the pipeline configuration.
+
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/fc60f50b-5352-4925-a063-ab978ec60219" width="500">
+</p>
+
 6. Click the "Create pipeline" button to finalize the pipeline setup.
+
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/345f09d2-90a9-4639-b9af-8af3155e5aae" width="500">
+</p>
 
 **Execute the Pipeline:**
 As you watch the pipeline execution, you will see a page with a green bar at the top. This page displays all the steps defined for the pipeline, and after a few minutes, each step will change from blue to green.
-Once the "Deploy" stage switches to green and displays "Succeeded," click on "AWS Elastic Beanstalk." This will open a new tab listing your AWS Elastic Beanstalk environments.
-Select the URL in the "Devopsgettingstarted-env" row. You should now see a webpage with a white background and the text you included in your GitHub commit from Module 1.
 
-5 - Finalize Pipeline and Test
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/d35d0669-0dce-41d0-88be-73331e651586" width="500">
+</p>
+
+**5 - Finalize Pipeline and Test**
 
 **Add a Review Stage to the Pipeline:**
 1. Open the AWS CodePipeline console.
 2. Locate the pipeline you created in Module 4, named "Pipeline-DevOpsGettingStarted," and select it.
 3. Click the "Edit" button near the top of the page.
 4. Click the "Add stage" button positioned between the "Build" and "Deploy" stages.
+
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/eb8c268c-7b21-4c0b-b07e-50d9b14a8e6f" width="500">
+</p>
+
 5. In the "Stage name" field, enter "Review". Click the  "Add stage" button.
 6. Inside the "Review" stage, click the "Add action group" button.
 7. Under "Action name," enter "Manual_Review." From the "Action provider" dropdown, select "Manual approval." Confirm that the optional fields are left blank.
-8. Click the orange "Done" button.
-9. Click the orange "Save" button at the top of the page.
-10. Confirm the changes by clicking the orange "Save" button again.
 
+<p align="center">
+  <img src="https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/47bbb4b1-0c3b-4cca-9b4a-0598b2305bd9" width="500">
+</p>
+
+8. Click the "Done" button. Click the  "Save" button at the top of the page.  Confirm the changes by clicking the orange "Save" button again.
+
+<p align="center">
+  <img src=https://github.com/arorae1/aws-elastic-beanstalk-express-js-sample/assets/119739576/a5f59725-023a-49f2-a0a3-13fcd4dedff2" width="500">
+</p>
+   
 Now, push a new commit to your repository:
 
 11. In your preferred code editor, open the "app.js" file from Module 1. Modify the message in Line 5. Save the file.
